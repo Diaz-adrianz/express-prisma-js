@@ -41,7 +41,7 @@ r.post(
   controller.create
 );
 
-r.put(
+r.patch(
   '/update/:id',
   authMiddleware(['SDM']),
   validatorMiddleware({ body: validator.update }),

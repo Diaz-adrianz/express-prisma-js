@@ -65,7 +65,7 @@ r.post(
   controller.create
 );
 
-r.put(
+r.patch(
   "/update/:id",
   validatorMiddleware({ body: validator.update }),
   controller.update
