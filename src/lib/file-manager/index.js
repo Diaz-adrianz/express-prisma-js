@@ -42,7 +42,7 @@ class FileManager {
     const filepaths = [];
 
     for (const file of files) {
-      const filename = await this.putFile(dir, file);
+      const filename = await this.putFile(dir, bucket, file);
       filepaths.push(filename);
     }
 
